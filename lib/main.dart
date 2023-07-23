@@ -15,7 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GradientContainer(),
+      home: GradientContainer(
+        colors: [
+          Color.fromARGB(255, 167, 136, 228),
+          Color.fromARGB(255, 98, 69, 155),
+          Color.fromARGB(255, 23, 11, 53)
+        ],
+      ),
     );
   }
 }
